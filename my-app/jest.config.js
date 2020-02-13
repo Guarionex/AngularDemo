@@ -5,8 +5,7 @@ module.exports = {
   preset: 'jest-preset-angular',
   testMatch: ['**/+(*.)+(spec).+(ts)'],
   setupFilesAfterEnv: ['<rootDir>/setupJest.ts'],
-  collectCoverage: true,
-  coverageReporters: ['html'],
+  coverageReporters: ['html', 'text'],
   coverageDirectory: 'coverage/my-app',
   testPathIgnorePatterns: [
     "<rootDir>/node_modules/",
